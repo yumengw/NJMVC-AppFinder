@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<base href="/njmvc/AppointmentWizard/11/101/2021-06-02/1320"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Enter Personal Information - TeleGov</title>
+<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com/css?family=Palanquin:400,300,100,200,500,600,700" rel="stylesheet" type="text/css"/>
+<link href="https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
+<!-- CSS -->
+<link href="/css/bundle.min.css?v=2BTarENgEyWjWDV3Yvkxn6gdsGEKw2s6ljFNXG3LsXw" rel="stylesheet">
+<link href="/css/main_all.css?v=pq4K_lYOK0tp8LIvVS6zEq1bRvqQ_CnHm7TtqUAwP0w" rel="stylesheet"/>
+<link href="/css/site.css?v=EQbZIF-sj82tOQ6ebSnunOiCnL-Rv__EYqxYc0JiwFw" rel="stylesheet"/>
+<link href="https://test.telegov.njportal.com/css/njmvc.css" rel="stylesheet" type="text/css"/>
+</link></link></head>
+<body class="intro">
+<header id="header">
+<a class="sr-only sr-only-focusable skipToContent" href="#mainContent">Skip to content</a>
+<nav class="navbar navbar-expand-lg navbar-dark justify-content-between">
+<div class="topnav" id="myTopnav">
+<div>
+<a class="mdg-entNav__logo"><img alt="powered by teleGov" src="/img/teleGov-logo.png"/></a>
+</div>
+<div class="navbar-collapse floatResponsive" id="navbarTogglerDemo02">
+<ul class="navbar-items navbar-nav flex-row ml-md-auto d-md-flex">
+<li class="&lt;nav&gt;-item mb-2">
+<a href="/njmvc" style="text-decoration:none! important;">
+<span aria-hidden="true" class="fas fa-home" role="presentation"></span> Home
+                        </a>
+</li>
+<li class="nav-item mb-2">
+<a href="/njmvc/Home/UserHelp" style="text-decoration:none! important;">
+<span aria-hidden="true" class="fas fa-question-circle" role="presentation"></span> Help
+                            </a>
+</li>
+<li class="nav-item html-partial">
+<a href="/Account/SignIn/NJMVCAzure?tenantCode=njmvc&amp;returnUrl=%2Fnjmvc%2FAppointmentWizard%2F11%2F101%2F2021-06-02%2F1320" style="text-decoration:none! important;">
+<span aria-hidden="true" class="fas fa-sign-in-alt" role="presentation"></span> Log in
+</a>
+</li>
+</ul>
+</div>
+<div>
+<a class="icon" href="javascript:void(0);" onclick="toggleResponsiveMenu()">
+<i class="fa fa-bars"></i>
+</a>
+</div>
+</div>
+</nav>
+</header>
+<div class="tg-hero tg-hero--shaded">
+<div class="tg-hero__logo">
+<img alt="Home" class="tg-hero__brand__logo" src="https://telegov.njportal.com/img/invertedlogo.png"/>
+</div>
+<div class="tg-hero__heading">
+<h1 class="tg-agency">
+<span>New Jersey Motor Vehicle Commission</span>
+<span class="tg-agency__name">NJ MVC Appointment Scheduling</span>
+</h1>
+</div>
+</div>
+<main id="mainContent">
+<div class="container body-content mt-3 mt-md-5">
+<div class="mdg-loader" id="loader">
+<div class="mdg-loader__dot"></div>
+<div class="mdg-loader__dot"></div>
+<div class="mdg-loader__dot"></div>
+<div class="mdg-loader__dot"></div>
+<div class="mdg-loader__dot"></div>
+<div class="mdg-loader__dot"></div>
+<div class="mdg-loader__dot"></div>
+<div class="mdg-loader__dot"></div>
+</div>
+<form action="/njmvc/AppointmentWizard/11/101/2021-06-02/1320" id="createForm" method="post">
+<input data-val="true" data-val-required="The Id field is required." id="Id" name="Id" type="hidden" value="0"/>
+<input data-val="true" data-val-maxlength="The field Time must be a string or array type with a maximum length of '10'." data-val-maxlength-max="10" data-val-required="Please select a time" id="AppointmentTime" name="AppointmentTime" type="hidden" value="1:20 PM"/>
+<input data-val="true" data-val-required="Please select a date" id="AppointmentDate" name="AppointmentDate" type="hidden" value="6/2/2021 12:00:00 AM"/>
+<input data-val="true" data-val-required="Please select an appointment type" id="AppointmentTypeId" name="AppointmentTypeId" type="hidden" value="11"/>
+<input data-val="true" data-val-required="Please select a location" id="LocationId" name="LocationId" type="hidden" value="101"/>
+<input data-val="true" data-val-required="The CustomerId field is required." id="CustomerId" name="CustomerId" type="hidden" value="0"/>
+<input data-val="true" data-val-required="The Id field is required." id="Customer_Id" name="Customer.Id" type="hidden" value="0"/>
+<input id="ConfirmationNumber" name="ConfirmationNumber" type="hidden" value=""/>
+<div class="justify-content-center">
+<div class="card wizard-card">
+<div class="wizard-header px-3" id="createMessage">
+<h2 class="h3">Applicant Information</h2>
+</div>
+<div class="wizard-header px-3" id="editMessage" style="display:none;">
+<h2 class="h3">Edit Appointment: <span class="text-danger"></span></h2>
+</div>
+<ul class="justify-content-around nav nav-tabs nav-fill setup-panel">
+<li class="nav-item" style="color:white;">RENEWAL: LICENSE OR NON-DRIVER ID</li>
+<li class="nav-item" style="color:white;">Bakers Basin - License or Non Driver ID Renewal</li>
+<li class="nav-item" style="color:white;">06/02/2021 1:20 PM  EDT</li>
+<li class="nav-item active">Applicant Information</li>
+</ul>
+<dev class="text-danger">
+</dev>
+<div class="wizard-intro px-3 pt-3 customInformationText">Appointment will <strong>ONLY</strong> be honored for: <ul><li>License &amp; Non Driver ID Renewal that cannot be completed online (<a href="https://mymvc.state.nj.us/apps/renew-driver-license.html" target="_blank">Check here for online availability</a> )</li></ul> <ul><li>The individual listed below</li></ul> </div>
+<div class="wizard-intro px-3 pt-3">Provide the information below. Items marked * are required.</div>
+<div class="form-horizontal">
+<div class="container-fluid container-padding">
+<div class="row">
+<div class="col-sm-6">
+<div class="form-group">
+<label class="required" for="firstName">First Name</label>
+<input class="form-control" data-val="true" data-val-maxlength="First Name cannot exceed 25 characters." data-val-maxlength-max="25" data-val-required="Please enter First Name." id="firstName" maxlength="25" name="Customer.FirstName" placeholder="" type="text" value=""/>
+<small>
+<em>
+<span class="form-text text-danger field-validation-valid" data-valmsg-for="Customer.FirstName" data-valmsg-replace="true"></span>
+</em>
+</small>
+</div>
+</div>
+<div class="col-sm-6">
+<div class="form-group">
+<label class="required" for="lastName">Last Name</label>
+<input class="form-control" data-val="true" data-val-maxlength="Last Name cannot exceed 30 characters." data-val-maxlength-max="30" data-val-required="Please enter Last Name." id="lastName" maxlength="30" name="Customer.LastName" placeholder="" type="text" value=""/>
+<small>
+<em>
+<span class="form-text text-danger field-validation-valid" data-valmsg-for="Customer.LastName" data-valmsg-replace="true"></span>
+</em>
+</small>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-6">
+<div class="form-group">
+<label class="required" for="email">Email</label>
+<input class="form-control" data-val="true" data-val-email="The Email field is not a valid e-mail address." data-val-maxlength="Email address cannot exceed 256 characters." data-val-maxlength-max="256" data-val-regex="The Email is not a valid e-mail address." data-val-regex-pattern="^([a-zA-Z0-9!#$%&amp;'*+/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&amp;'*+/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?([/[a-zA-Z0-9\._?&amp;;=%]*))$" data-val-required="Please enter Email." id="email" maxlength="256" name="Customer.Email" placeholder="" type="text" value=""/>
+<small>
+<em>
+<span class="form-text text-danger field-validation-valid" data-valmsg-for="Customer.Email" data-valmsg-replace="true"></span>
+</em>
+</small>
+</div>
+</div>
+<div class="col-sm-6">
+<div class="form-group">
+<label class="required" for="phone">Phone</label>
+<input class="form-control phone_us" data-val="true" data-val-maxlength="The field Phone must be a string or array type with a maximum length of '16'." data-val-maxlength-max="16" data-val-phone="The Phone field is not a valid phone number." data-val-regex="The Phone Number is not a valid phone number." data-val-regex-pattern="\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})" data-val-required="Please enter Phone Number." id="phone" maxlength="16" name="Customer.PhoneNumber" placeholder="" type="text" value=""/>
+<small>
+<em>
+<span class="form-text text-danger field-validation-valid" data-valmsg-for="Customer.PhoneNumber" data-valmsg-replace="true"></span>
+</em>
+</small>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-6">
+<div class="form-group">
+<label class="required" for="driverLicense">Driver's License Number/Non-Driver ID Number(No Spaces)</label>
+<input class="form-control" data-val="true" data-val-required="Please enter Driver" id="" license="" name="driverLicense" non-driver="" number="" number(no="" placeholder="" s="" spaces).'="" type="text" value=""/>
+<small>
+<em>
+<span class="form-text text-danger field-validation-valid" data-valmsg-for="driverLicense" data-valmsg-replace="true"></span>
+</em>
+</small>
+</div>
+</div>
+<small>
+<em>
+<span class="form-text text-danger field-validation-error">
+<span class="field-validation-valid" data-valmsg-for="CustomError" data-valmsg-replace="true"></span>
+</span>
+</em>
+</small>
+</div>
+<div class="row">
+<div class="col-sm-6">
+<div class="checkbox">
+<label class="text-left">
+<label for="receiveTexts">
+<input class="form-check-input pt-1 ml-1" data-val="true" data-val-required="The Receive Texts field is required." id="receiveTexts" name="Customer.ReceiveTexts" placeholder="" type="checkbox" value="true">
+<span>Receive Text Messages</span>
+</input></label>
+<small>
+<em>
+<span class="checkbox text-danger field-validation-valid" data-valmsg-for="Customer.ReceiveTexts" data-valmsg-replace="true"></span>
+</em>
+</small>
+</label>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="checkbox">
+<span class="text-left">
+<label class="required">Confirmation of Policy</label> <br/>
+<span class="attestationtext" for="receiveTexts">
+<input class="form-check-input pt-1 ml-1" data-val="true" data-val-required="The Attest field is required." id="receiveTexts" name="Attest" placeholder="" type="checkbox" value="true"/>
+<span>By checking this box, I confirm that I am aware that after 30 minutes from making this appointment, I will NOT be able to change the personal information on this appointment.  I will only be able to change the appointment date or time after 30 minutes. All other changes will require a cancellation.</span>
+</span>
+<small>
+<em>
+<span class="checkbox text-danger field-validation-valid" data-valmsg-for="Attest" data-valmsg-replace="true"></span>
+</em>
+</small>
+</span>
+</div>
+</div>
+<hr/>
+<div class="form-group">
+<div class="float-right">
+<input class="btn btn-secondary g-recaptcha" data-callback="onSubmit" data-sitekey="6LfpgswZAAAAAFDVLD6UwyKXqw7WpyK3vsTXGgR6" type="submit" value="Submit"/>
+</div>
+<div class="float-left">
+<a class="btn btn-default" href="/njmvc/AppointmentWizard/11/101?date=2021-06-02"><span aria-hidden="true" class="fal fa-arrow-left" role="presentation"></span> Previous</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<input name="__RequestVerificationToken" type="hidden" value="CfDJ8KLB7EApaiNLk8lH9KgP3x_4SPLgk6b3L37LUyjtM4mZ0AqMMhB6KD2G_pd1RCSDLZQOmL1KxgUeuG0bGf80k5KJmLa4VooA9ep8ezVp2gEttG4DVgAX8n_kK2pfhRfvoRDqSyFoQfrG1ebK7sxyAqk"/><input name="Customer.ReceiveTexts" type="hidden" value="false"/><input name="Attest" type="hidden" value="false"/></form>
+</div>
+</main>
+<footer class="footer text-center mt-5 justify-content-between">
+<div class="container">
+<div class="row">
+<div class="col" id="mdg-FOOTER__contacts">
+<a href="/" style="text-decoration: underline;" target="_blank">TeleGov</a>, an NIC Platform
+            </div>
+</div>
+</div>
+</footer>
+<script src="/lib/lib.min.js?v=XuIVv2JrQbSFgR6fohQnG0v-0-HEcRCn-92q4TpAh-M"></script>
+<script crossorigin="anonymous" src="https://kit.fontawesome.com/f6434129d2.js"></script>
+<script src="/lib/local.min.js?v=H1EsobNWpep2IKVrZHQpp8lGAxoRJIEeWdNvBubmnkc"></script>
+<script type="text/javascript">var relativeUrl = '';</script>
+<script async="" defer="" src="https://www.google.com/recaptcha/api.js"></script>
+<script type="text/javascript">
+        function onSubmit(token) {
+            var $form = $("form#createForm");
+            $form = $form
+                .removeData("validator") /* added by the raw jquery.validate plugin */
+                .removeData("unobtrusiveValidation");  /* added by the jquery unobtrusive plugin*/
+            $.validator.unobtrusive.parse($form);
+
+            if ($form.valid()) {
+                $form.submit();
+            }
+        }
+        var allowKeys = [0, 32, 39, 45];
+        $("#FirstName").bind('keypress', function (event) {
+            var inputValue = event.charCode;
+            var Count = $(this).val().length;
+            if (Count < 25 && ((inputValue >= 65 && inputValue <= 122) || $.inArray(inputValue, allowKeys) == 0))
+                return true;
+            return false;
+        });
+        $("#LastName").bind('keypress', function (event) {
+            var Count = $(this).val().length;
+            var inputValue = event.charCode;
+            if (Count < 30 && ((inputValue >= 65 && inputValue <= 122) || $.inArray(inputValue, allowKeys) == 0))
+                return true;
+            return false;
+        });
+        
+        $(document).ready(function () {
+            if ("".length > 0) {
+                $("#createMessage").hide();
+                $("#editMessage").show();
+            }
+
+            var error = "";
+            if (error.length > 0) {
+                modalAlert(error);
+            }
+        });
+    </script>
+<!-- Google Analytics -->
+<script>
+        window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+        ga('create', 'UA-22261218-32', 'auto');
+        ga('send', 'pageview');
+
+ga('create', 'UA-22261218-33', 'auto', 'njmvcTracker');
+ga('njmvcTracker.send', 'pageview');    </script>
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+<!-- End Google Analytics -->
+</body>
+</html>
