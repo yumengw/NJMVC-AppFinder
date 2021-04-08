@@ -10,7 +10,7 @@ db_host = 'https://telegov.njportal.com/'
 non_avail = 'Currently, there are no appointments available at this location.'
 for line in csv.DictReader(open(locfile)):
 
-    if int(line['time from home']) > 60: continue
+    if int(line['time from home']) > 50: continue
     page = requests.get(URL_prefix + '/' + line['url'])
     soup = BeautifulSoup(page.content, 'html.parser')
     #print(soup.prettify())
@@ -26,7 +26,7 @@ for line in csv.DictReader(open(locfile)):
         time_string = timee.split('/')[-1]
         date_obj = datetime.strptime(date_string + ' ' + time_string, "%Y-%m-%d %H%M")
 
-        if date_obj < datetime(2021, 5, 2): 
+        if date_obj < datetime(2021, 4, 11): 
             print(line)
             webbrowser.open(db_host + timee)
         else:
@@ -35,4 +35,4 @@ for line in csv.DictReader(open(locfile)):
         #print(results.prettify())
         #with open("output.html", "w") as file:
         #    file.write(str(soup))
-        break
+        #break
