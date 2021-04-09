@@ -42,7 +42,7 @@ class Window(QDialog):
         self.submitBtn.setCheckable(True)
         self.submitBtn.clicked.connect(self.TextConsl)
         
-        self.autodirect = QCheckBox("Take me to the appointment page automatically (with default browser)")
+        self.autodirect = QCheckBox("Take me to the appointment page automatically with default browser (suggested)")
         self.autodirect.setChecked(False)
         self.autodirect.toggled.connect(self.boxchecked)
         
