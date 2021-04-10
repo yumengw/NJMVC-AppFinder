@@ -13,7 +13,7 @@ All data is REAL TIME from Official website https://telegov.njportal.com/njmvc/A
 2. The search will continue running to query real time changes until you click the "Stop search" button
 3. If checked the "Take me to the appointment page automatically" box, the program will automatically pop-up qualified appointment page in your default browser so you can easily lock your slot (suggested).
 
-## launch use python
+## Launch through python
 
 ```
 python3 gui.py
