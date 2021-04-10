@@ -23,3 +23,9 @@ python3 gui.py
 
 Download the portable dmg for Mac -> [AppFinder.dmg](https://github.com/yumengw/NJMVC-AppFinder/releases/tag/v1.0-Release)
 
+## Like the app
+If you find this app helpful, share it with your friend! 
+
+[SHARE ON TWITTER](http://twitter.com/share?text=This+app+helped+me+reserve+a+spot+at+NJ+MVC&url=https://github.com/yumengw/NJMVC-AppFinder)
+
+[SHARE ON FACEBOOK](https://www.facebook.com/sharer/sharer.php?u=https://github.com/yumengw/NJMVC-AppFinder%[title]=This+Is%2C+Google+a+search+engine)
